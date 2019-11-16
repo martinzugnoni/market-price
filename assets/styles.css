@@ -1,0 +1,7 @@
+.container, #output-state {
+    margin-top: 30px;
+}
+
+.modebar{
+    display: none !important;
+}
