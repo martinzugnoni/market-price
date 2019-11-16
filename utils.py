@@ -1,5 +1,4 @@
 import time
-import locale
 import requests
 
 BASE_URL = "https://api.mercadolibre.com"
@@ -35,6 +34,5 @@ def get_precio_dolar(blue=False, tipo='compra'):
     return float(doc['casa'][tipo].replace(',', '.'))
 
 
-def currency_format(value, locale_name='en_US'):
-    locale.setlocale(locale.LC_ALL, locale_name)
-    return locale.format_string('%d', value, grouping=True)
+def currency_format(value):
+    return f'{value:,.0f}'
