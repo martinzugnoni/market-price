@@ -17,12 +17,12 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.layout = html.Div(className='container', children=[
     html.H1('Precio de mercado'),
     html.P(children=[
-        html.Span('Esta app es una prueba de concepto desarrollada sobre Python/Pandas, Plotly y Dash. Utiliza la API de '),
+        html.Span('Esta app es una prueba de concepto desarrollada sobre Python/Pandas, plot.ly y Dash. Utiliza la API de '),
         html.A('Mercado Libre', href='https://developers.mercadolibre.com.ar/es_ar/api-docs-es'),
         html.Span(' (MELI) para determinar el precio de mercado de un artículo en base a una búsqueda de texto.'),
     ]),
     html.P(children=[
-        html.Span('Probá realizando una búsquedas acotadas, tal como '),
+        html.Span('Probá realizando búsquedas acotadas, tal como '),
         html.Span("ford focus 2019 0km", className='badge badge-primary'),
         html.Span(' ó '),
         html.Span("iphone 8 plus 64gb usado", className='badge badge-primary'),
