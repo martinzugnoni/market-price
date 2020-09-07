@@ -69,7 +69,7 @@ def update_output_div(n_clicks, input_value):
         return ({'is_loading': False}, '', '')
 
     all_results = search_products_in_mercadolibre({'q': input_value})
-    USDARS = get_precio_dolar(blue=False, tipo='venta')
+    USDARS = get_precio_dolar(blue=True, tipo='venta')
     df_list = []
     for result in all_results:
         if result['currency_id'] == 'ARS':
